@@ -1,7 +1,13 @@
 import '../../global.css';
 
-import { Slot } from 'expo-router';
+import { Stack } from 'expo-router';
+
+import { AppProviders } from '@/providers/AppProviders';
 
 export default function RootLayout() {
-  return <Slot />;
+  return (
+    <AppProviders>
+      <Stack screenOptions={{ headerShown: false }} />
+    </AppProviders>
+  );
 }
