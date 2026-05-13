@@ -4,22 +4,8 @@
 const brand = {
   black: '#050505',
   white: '#FFFFFF',
-  'royal-blue': '#0A84FF',
   'dark-navy': '#001F3F',
   'dark-gold': '#B68B2D',
-};
-
-const blue = {
-  50: '#E5F2FF',
-  100: '#B8DCFF',
-  200: '#7CC0FF',
-  300: '#3FA3FF',
-  400: '#0A84FF',
-  500: '#0066D6',
-  600: '#004FB0',
-  700: '#003B85',
-  800: '#002A5C',
-  900: '#001F3F',
 };
 
 const gold = {
@@ -48,6 +34,11 @@ const ink = {
   1000: '#FFFFFF',
 };
 
+const navy = {
+  DEFAULT: '#001F3F',
+  deep: '#000E1F',
+};
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -61,9 +52,9 @@ module.exports = {
     extend: {
       colors: {
         brand,
-        blue,
         gold,
         ink,
+        navy,
         bg: {
           primary: '#050505',
           secondary: '#0A0A0A',
@@ -84,25 +75,25 @@ module.exports = {
           disabled: '#404040',
           inverse: '#050505',
           accent: '#B68B2D',
-          link: '#0A84FF',
+          link: '#B68B2D',
         },
         border: {
           subtle: '#1A1A1A',
           DEFAULT: '#262626',
           strong: '#404040',
           accent: '#8F6D1F',
-          focus: '#0A84FF',
+          focus: '#B68B2D',
         },
         accent: {
-          primary: '#0A84FF',
-          secondary: '#B68B2D',
+          primary: '#B68B2D',
+          secondary: '#001F3F',
           navy: '#001F3F',
         },
         status: {
           success: '#34C759',
           warning: '#FF9500',
           error: '#FF453A',
-          info: '#0A84FF',
+          info: '#B68B2D',
         },
       },
       fontFamily: {
@@ -162,8 +153,7 @@ module.exports = {
         lg: '0 8px 16px 0 rgba(0, 0, 0, 0.36)',
         xl: '0 16px 24px 0 rgba(0, 0, 0, 0.42)',
         '2xl': '0 24px 32px 0 rgba(0, 0, 0, 0.48)',
-        'glow-blue': '0 0 16px 0 rgba(10, 132, 255, 0.55)',
-        'glow-gold': '0 0 18px 0 rgba(182, 139, 45, 0.5)',
+        'glow-gold': '0 0 18px 0 rgba(182, 139, 45, 0.55)',
         'glow-navy': '0 4px 20px 0 rgba(0, 31, 63, 0.6)',
       },
     },

@@ -23,7 +23,7 @@ export default function AppLayout() {
           borderTopColor: '#1A1A1A',
           borderTopWidth: 1,
         },
-        tabBarActiveTintColor: '#0A84FF',
+        tabBarActiveTintColor: '#B68B2D',
         tabBarInactiveTintColor: '#737373',
         tabBarLabelStyle: {
           fontSize: 11,

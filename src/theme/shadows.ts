@@ -58,17 +58,10 @@ export const shadow = {
     shadowRadius: 32,
     elevation: 16,
   },
-  glowBlue: {
-    shadowColor: brand.royalBlue,
-    shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 0.55,
-    shadowRadius: 16,
-    elevation: 10,
-  },
   glowGold: {
     shadowColor: brand.darkGold,
     shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 0.5,
+    shadowOpacity: 0.55,
     shadowRadius: 18,
     elevation: 10,
   },
